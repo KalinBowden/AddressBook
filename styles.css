@@ -2,3 +2,22 @@
     Dev:    Kalin Bowden
     Date:   
 */
+
+body
+{  
+    background: linear-gradient(35deg, antiquewhite, whitesmoke);
+    color: black;
+    padding: 0;
+}
+
+div
+{
+    padding: 0px;
+}
+
+header
+{
+    padding: 1em;
+    color: antiquewhite;
+    background: linear-gradient(35deg, dimgray, grey);
+}
