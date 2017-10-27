@@ -8,6 +8,64 @@
     <title>Address Book</title>
     <link href="https://fonts.googleapis.com/css?family=Limelight" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Hind+Guntur" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function()
+        {
+          //kalin
+          $(".pl0").click(function(){
+            $(".cl0").toggleClass(function()
+            {
+              $("#main").attr("src", "images/kalin.jpg");
+              
+              return "dis";
+            })
+          });
+
+          //scott
+          $(".pl1").click(function(){
+            $(".cl1").toggleClass(function()
+            {
+              $("#main").attr("src", "images/scott.jpg");
+              
+              return "dis";
+            })
+          });
+
+          //kristin
+          $(".pl2").click(function(){
+            $(".cl2").toggleClass(function()
+            {
+              $("#main").attr("src", "images/kris.jpg");
+              
+              return "dis";
+            })
+          });
+
+          //yosuke
+          $(".pl3").click(function(){
+            $(".cl3").toggleClass(function()
+            {
+              $("#main").attr("src", "images/yosuke.jpg");
+              
+              return "dis";
+            })
+          });
+
+          //jarret
+          $(".pl4").click(function(){
+            $(".cl4").toggleClass(function()
+            {
+              $("#main").attr("src", "images/jarret.jpg");
+              
+              return "dis";
+            })
+          });
+        })
+          
+          
+      </script>
 
 
     <!-- Bootstrap -->
@@ -24,7 +82,7 @@
   </head>
   <body>
 
-    <!-- -->
+    <!-- Header-->
     <header>
       <div class="row">
         <div class="col-md-4"><h1>My Address Book</h1></div>
@@ -33,229 +91,24 @@
       </div>
     </header>
 
-
+    <!-- Contacts -->
     <div class="container-fluid">
         <div class="row">
-          <div class="col-md-1 side">
-            <div class="col-md-12"><span class="glyphicon glyphicon-star"></div>
-            <div class="col-md-12"><span class="glyphicon glyphicon-star"></div>
-            <div class="col-md-12"><span class="glyphicon glyphicon-star"></div>
-            <div class="col-md-12"><span class="glyphicon glyphicon-star"></div>
-            <div class="col-md-12"><span class="glyphicon glyphicon-star"></div>
+          <div class="col-md-2">
+            <img src="" alt="" id="main">
           </div>
-          <div class="col-md-2"></div>
-          <div class="col-md-7">
+          <div class="col-md-1"></div>
+          <div class="col-md-7" id="contacts">
 
             <div class="row text-left entry">
-                <div class="col-md-2">
-                  <img src="images/kalin.jpg" alt="">
-                </div>
-                <div class="col-md-10">
-
-                  <div class="row text-left">
-                    <div class="col-md-3"><h3><strong>Mr. Kalin Bowden</strong></h3></div>
-                    <div class="col-md-6"><h3><strong>Be Dapper Designs</strong></h3></div>
-                    <div class="col-md-3"><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-envelope"></span></div>
-                  </div>  
-                  <div class="row text-left">
-                    <div class="col-md-3">206 Walkington Lane</div>
-                    <div class="col-md-2">Branson</div>
-                    <div class="col-md-2">MO</div>
-                    <div class="col-md-2">65616</div>
-                    <div class="col-md-3"></div>
-                  </div>
-                  <div class="row text-left">
-                    <div class="col-md-3">Mobile: (417).332.7248</div>
-                    <div class="col-md-5">Kalinbowden@gmail.com</div>
-                    <div class="col-md-4"></div>
-                  </div>
-                </div>
             </div>
-              <div class="row text-left entry">
-                <div class="col-md-2">
-                  <img src="images/kalin.jpg" alt="">
-                </div>
-                <div class="col-md-10">
-
-                  <div class="row text-left">
-                    <div class="col-md-3"><h3><strong>Mr. Kalin Bowden</strong></h3></div>
-                    <div class="col-md-6"><h3><strong>Be Dapper Designs</strong></h3></div>
-                    <div class="col-md-3"></div>
-                  </div>  
-                  <div class="row text-left">
-                    <div class="col-md-3">206 Walkington Lane</div>
-                    <div class="col-md-2">Branson</div>
-                    <div class="col-md-2">MO</div>
-                    <div class="col-md-2">65616</div>
-                    <div class="col-md-3"></div>
-                  </div>
-                  <div class="row text-left">
-                    <div class="col-md-4">Mobile: (417).332.7248</div>
-                    <div class="col-md-4"></div>
-                    <div class="col-md-4"></div>
-                  </div>
-                </div>
-            </div>
-              <div class="row text-left entry">
-                <div class="col-md-2">
-                  <img src="images/kalin.jpg" alt="">
-                </div>
-                <div class="col-md-10">
-
-                  <div class="row text-left">
-                    <div class="col-md-3"><h3><strong>Mr. Kalin Bowden</strong></h3></div>
-                    <div class="col-md-6"><h3><strong>Be Dapper Designs</strong></h3></div>
-                    <div class="col-md-3"></div>
-                  </div>  
-                  <div class="row text-left">
-                    <div class="col-md-3">206 Walkington Lane</div>
-                    <div class="col-md-2">Branson</div>
-                    <div class="col-md-2">MO</div>
-                    <div class="col-md-2">65616</div>
-                    <div class="col-md-3"></div>
-                  </div>
-                  <div class="row text-left">
-                    <div class="col-md-4">Mobile: (417).332.7248</div>
-                    <div class="col-md-4"></div>
-                    <div class="col-md-4"></div>
-                  </div>
-                </div>
-            </div>
-              <div class="row text-left entry">
-                <div class="col-md-2">
-                  <img src="images/kalin.jpg" alt="">
-                </div>
-                <div class="col-md-10">
-
-                  <div class="row text-left">
-                    <div class="col-md-3"><h3><strong>Mr. Kalin Bowden</strong></h3></div>
-                    <div class="col-md-6"><h3><strong>Be Dapper Designs</strong></h3></div>
-                    <div class="col-md-3"></div>
-                  </div>  
-                  <div class="row text-left">
-                    <div class="col-md-3">206 Walkington Lane</div>
-                    <div class="col-md-2">Branson</div>
-                    <div class="col-md-2">MO</div>
-                    <div class="col-md-2">65616</div>
-                    <div class="col-md-3"></div>
-                  </div>
-                  <div class="row text-left">
-                    <div class="col-md-4">Mobile: (417).332.7248</div>
-                    <div class="col-md-4"></div>
-                    <div class="col-md-4"></div>
-                  </div>
-                </div>
-            </div>
-              <div class="row text-left entry">
-                <div class="col-md-2">
-                  <img src="images/kalin.jpg" alt="">
-                </div>
-                <div class="col-md-10">
-
-                  <div class="row text-left">
-                    <div class="col-md-3"><h3><strong>Mr. Kalin Bowden</strong></h3></div>
-                    <div class="col-md-6"><h3><strong>Be Dapper Designs</strong></h3></div>
-                    <div class="col-md-3"></div>
-                  </div>  
-                  <div class="row text-left">
-                    <div class="col-md-3">206 Walkington Lane</div>
-                    <div class="col-md-2">Branson</div>
-                    <div class="col-md-2">MO</div>
-                    <div class="col-md-2">65616</div>
-                    <div class="col-md-3"></div>
-                  </div>
-                  <div class="row text-left">
-                    <div class="col-md-4">Mobile: (417).332.7248</div>
-                    <div class="col-md-4"></div>
-                    <div class="col-md-4"></div>
-                  </div>
-                </div>
-            </div>
-              <div class="row text-left entry">
-                <div class="col-md-2">
-                  <img src="images/kalin.jpg" alt="">
-                </div>
-                <div class="col-md-10">
-
-                  <div class="row text-left">
-                    <div class="col-md-3"><h3><strong>Mr. Kalin Bowden</strong></h3></div>
-                    <div class="col-md-6"><h3><strong>Be Dapper Designs</strong></h3></div>
-                    <div class="col-md-3"></div>
-                  </div>  
-                  <div class="row text-left">
-                    <div class="col-md-3">206 Walkington Lane</div>
-                    <div class="col-md-2">Branson</div>
-                    <div class="col-md-2">MO</div>
-                    <div class="col-md-2">65616</div>
-                    <div class="col-md-3"></div>
-                  </div>
-                  <div class="row text-left">
-                    <div class="col-md-4">Mobile: (417).332.7248</div>
-                    <div class="col-md-4"></div>
-                    <div class="col-md-4"></div>
-                  </div>
-                </div>
-            </div>
-              <div class="row text-left entry">
-                <div class="col-md-2">
-                  <img src="images/kalin.jpg" alt="">
-                </div>
-                <div class="col-md-10">
-
-                  <div class="row text-left">
-                    <div class="col-md-3"><h3><strong>Mr. Kalin Bowden</strong></h3></div>
-                    <div class="col-md-6"><h3><strong>Be Dapper Designs</strong></h3></div>
-                    <div class="col-md-3"></div>
-                  </div>  
-                  <div class="row text-left">
-                    <div class="col-md-3">206 Walkington Lane</div>
-                    <div class="col-md-2">Branson</div>
-                    <div class="col-md-2">MO</div>
-                    <div class="col-md-2">65616</div>
-                    <div class="col-md-3"></div>
-                  </div>
-                  <div class="row text-left">
-                    <div class="col-md-4">Mobile: (417).332.7248</div>
-                    <div class="col-md-4"></div>
-                    <div class="col-md-4"></div>
-                  </div>
-                </div>
-            </div>
-              <div class="row text-left entry">
-                <div class="col-md-2">
-                  <img src="images/kalin.jpg" alt="">
-                </div>
-                <div class="col-md-10">
-
-                  <div class="row text-left">
-                    <div class="col-md-3"><h3><strong>Mr. Kalin Bowden</strong></h3></div>
-                    <div class="col-md-6"><h3><strong>Be Dapper Designs</strong></h3></div>
-                    <div class="col-md-3"></div>
-                  </div>  
-                  <div class="row text-left">
-                    <div class="col-md-3">206 Walkington Lane</div>
-                    <div class="col-md-2">Branson</div>
-                    <div class="col-md-2">MO</div>
-                    <div class="col-md-2">65616</div>
-                    <div class="col-md-3"></div>
-                  </div>
-                  <div class="row text-left">
-                    <div class="col-md-4">Mobile: (417).332.7248</div>
-                    <div class="col-md-4"></div>
-                    <div class="col-md-4"></div>
-                  </div>
-                </div>
-            </div>
-
           </div>
-            
-        
       </div>
     </div>
     
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>-->
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src='ad.js'></script>

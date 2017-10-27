@@ -10,6 +10,7 @@ body
     padding: 0;
     text-align: center;
     font-family: 'Hind Guntur', sans-serif;
+    height: 70em;
 }
 
 .container-fluid
@@ -74,4 +75,14 @@ img
 {
     font-size: 3em;
     margin-top: .25em;
+}
+
+.dis
+{
+    display: none;
+}
+
+img
+{
+    margin-top: 2em;
 }
